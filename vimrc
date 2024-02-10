@@ -1,0 +1,1 @@
+/home/elsif-maj/.vimrc
