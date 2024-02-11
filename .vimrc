@@ -18,6 +18,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'sainnhe/everforest'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
+Plug 'phanviet/vim-monokai-pro'
 call plug#end()
 
 " Necessary for true color within Tmux
