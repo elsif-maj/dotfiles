@@ -19,6 +19,9 @@ Plug 'sainnhe/everforest'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'phanviet/vim-monokai-pro'
+Plug 'srcery-colors/srcery-vim'
+Plug 'AlessandroYorba/Alduin'
+Plug 'bluz71/vim-moonfly-colors'
 call plug#end()
 
 " Necessary for true color within Tmux
