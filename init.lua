@@ -97,7 +97,8 @@ vim.g.have_nerd_font = false
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
--- MJ: new attempt here:
+
+-- MJ: Set tabs to be 4 spaces in width by default -- albeit there is a plugin which does file-scoped autodeterminations as well:
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
@@ -193,11 +194,11 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
--- MJ: attempt to remap :bn and :bp to right/left arrow keys
+-- MJ: Remap :bn and :bp to right/left arrow keys
 vim.keymap.set('n', '<Right>', ':bn<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<Left>', ':bp<CR>', { noremap = true, silent = true })
 
--- MJ: attempt to get error messages to pop up in their own small windows instead of disappearing off of the edge of the window.
+-- MJ: Error messages to pop up in their own small windows instead of disappearing off of the edge of the window.
 
 vim.api.nvim_set_keymap('n', 'gl', '<cmd>lua vim.diagnostic.open_float()<CR>', { noremap = true, silent = true })
 
