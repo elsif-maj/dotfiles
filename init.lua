@@ -103,6 +103,7 @@ vim.g.have_nerd_font = false
 -- MJ: Set tabs to be 4 spaces in width by default -- albeit there is a plugin which does file-scoped autodeterminations as well:
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
+-- vim.opt.expandtab = false
 
 -- Make line numbers default
 vim.opt.number = true
@@ -148,8 +149,8 @@ vim.opt.splitbelow = true
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
-vim.opt.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+-- vim.opt.list = true
+-- vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
@@ -798,8 +799,6 @@ require("lazy").setup({
 
 	{ "folke/tokyonight.nvim" },
 
-	{ "https://github.com/camgunz/amber" },
-
 	{ "https://github.com/p00f/alabaster.nvim" },
 	{ -- You can easily change to a different colorscheme.
 		-- Change the name of the colorscheme plugin below, and then
@@ -819,7 +818,7 @@ require("lazy").setup({
 			-- vim.cmd.hi 'Comment gui=none'
 		end,
 	},
-
+	{ "https://github.com/elsif-maj/elsif-amber.nvim" },
 	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
 	-- Highlight todo, notes, etc in comments
