@@ -800,19 +800,28 @@ require("lazy").setup({
 	{ "folke/tokyonight.nvim" },
 
 	{ "https://github.com/p00f/alabaster.nvim" },
+	{ "https://github.com/jaredgorski/fogbell.vim" },
+	{ "https://github.com/huyvohcmc/atlas.vim" },
+	{ "https://github.com/huyvohcmc/atlas.vim" },
+	{ "https://github.com/t184256/vim-boring" },
+	{ "https://github.com/pbrisbin/vim-colors-off" },
+	{ "https://github.com/jaredgorski/Mies.vim" },
+	{ "https://github.com/kxzk/skull-vim" },
+	{ "https://github.com/elsif-maj/elsif.nvim" },
+
 	{ -- You can easily change to a different colorscheme.
 		-- Change the name of the colorscheme plugin below, and then
 		-- change the command in the config to whatever the name of that colorscheme is.
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
-		"https://github.com/elsif-maj/elsif.nvim",
-		name = "elsif",
+		"https://github.com/pbrisbin/vim-colors-off",
+		name = "vim-colors-off",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		init = function()
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("elsif")
+			vim.cmd.colorscheme("quiet")
 
 			-- You can configure highlights by doing something like:
 			-- vim.cmd.hi 'Comment gui=none'
