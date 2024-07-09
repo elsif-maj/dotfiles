@@ -799,15 +799,15 @@ require("lazy").setup({
 
 	{ "folke/tokyonight.nvim" },
 
+	-- MJ:
 	{ "https://github.com/p00f/alabaster.nvim" },
 	{ "https://github.com/jaredgorski/fogbell.vim" },
 	{ "https://github.com/huyvohcmc/atlas.vim" },
-	{ "https://github.com/huyvohcmc/atlas.vim" },
-	{ "https://github.com/t184256/vim-boring" },
 	{ "https://github.com/pbrisbin/vim-colors-off" },
 	{ "https://github.com/jaredgorski/Mies.vim" },
 	{ "https://github.com/kxzk/skull-vim" },
-	{ "https://github.com/elsif-maj/elsif.nvim" },
+	{ "https://github.com/elsif-maj/elsif-amber" },
+	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
 	{ -- You can easily change to a different colorscheme.
 		-- Change the name of the colorscheme plugin below, and then
@@ -821,14 +821,12 @@ require("lazy").setup({
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("quiet")
+			vim.cmd.colorscheme("off")
 
 			-- You can configure highlights by doing something like:
 			-- vim.cmd.hi 'Comment gui=none'
 		end,
 	},
-	{ "https://github.com/elsif-maj/elsif-amber.nvim" },
-	{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
 
 	-- Highlight todo, notes, etc in comments
 	{
