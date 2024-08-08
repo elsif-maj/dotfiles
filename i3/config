@@ -2,9 +2,11 @@
 
 # SETUP 1) Single 4k monitor w/ Xresources set to 144:
 
-exec xrandr --output DisplayPort-0 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DisplayPort-1 --off --output DisplayPort-2 --off --output HDMI-A-0 --off --output DVI-D-0 --off
+# exec xrandr --output DisplayPort-0 --primary --mode 3840x2160 --pos 0x0 --rotate normal --output DisplayPort-1 --off --output DisplayPort-2 --off --output HDMI-A-0 --off --output DVI-D-0 --off
 
-# SETUP 2) Here is an attempt at including xrandr commands that seem to work as far as
+# SETUP 2) Single small monitor: turn off .Xresources dpi mod mod 
+
+# SETUP 3) Here is an attempt at including xrandr commands that seem to work as far as
 # configuring the panning and layout of the 3-monitor desktop setup I have.
 # This really only works scale-wise in tandem with general DPI in .Xresources being
 # set to 144 (line: Xft.dpi) 144and then doing some zoom-out on browsers/terminals 
